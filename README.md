@@ -8,7 +8,7 @@ TODO Scala/Python/Rust:
 - [ ] Run
 - [x] Debug for Scala
 - [x] coc/lsp etc Rust/Scala
-- [x] coc/lsp etc python?
+- [ ] coc/lsp etc python?
 - [ ] Debug others
 - [ ] Create class/trait/module etc
 - [ ] Run output metals improved (MetalsToggleLogs)

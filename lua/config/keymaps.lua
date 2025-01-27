@@ -1,17 +1,17 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
---[[Store these here
-vim.keymap.set("n", "<Leader>O", function()
+vim.keymap.set("n", "<Leader>Nk", function()
   local row = vim.api.nvim_win_get_cursor(0)[1] -- Get current cursor row
   vim.api.nvim_buf_set_lines(0, row - 1, row - 1, false, { "" }) -- Insert an empty line above
-end, { desc = "Add new line above without moving cursor" })
+end, { desc = "Add new line above" })
 
-vim.keymap.set("n", "<Leader>o", function()
+vim.keymap.set("n", "<Leader>Nj", function()
   local row = vim.api.nvim_win_get_cursor(0)[1] -- Get current cursor row
   vim.api.nvim_buf_set_lines(0, row, row, false, { "" }) -- Insert an empty line above
-end, { desc = "Add new line below without moving cursor" })
+end, { desc = "Add new line below" })
 
+--[[
 -- Function to toggle the terminal panel
 local term_buf = nil -- Buffer ID for the terminal
 local term_win = nil -- Window ID for the terminal
